@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className='flex flex-col justify-around container mx-auto'>
+    <div className='flex flex-col justify-around container mx-auto mb-20'>
       {/* Notice Board and Birthday Students Section */}
       <div className='flex flex-col md:flex-row my-10 gap-10'>
         <div className='w-full md:w-1/2 text-center bg-gray-100 h-72'>
@@ -70,7 +70,7 @@ const Hero = () => {
           <div className='w-full lg:w-1/3'>
             <img
               className='rounded-md mt-10'
-              src=''
+              src='https://scontent.fixr3-1.fna.fbcdn.net/v/t39.30808-6/460517162_1072646420927801_5384774935425055603_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pIdALXIDmDcQ7kNvgHaqAuY&_nc_zt=23&_nc_ht=scontent.fixr3-1.fna&_nc_gid=A3vmzxq7I2BL4nriykbEhXo&oh=00_AYA70iQ8hP2_ec4s8IjIysOn0OgOSmDA5XwZLbMT87SF8Q&oe=671C5678'
               alt='img'
             />
           </div>

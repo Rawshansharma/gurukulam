@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import logo from '../assets/logo.jpg'
+import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,81 +10,70 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full sticky top-0 bg-orange-400 z-50">
-      <div className="container mx-auto flex  justify-between">
+    <nav className="w-full sticky top-0 bg-orange-500 z-50 shadow-lg">
+      <div className="container mx-auto py-4 px-6 flex justify-between items-center">
         {/* Logo */}
         <div>
-          <img
-            className="w-20"
-            src={logo}
-            alt="logo"
-          />
+          <img className="w-20" src={logo} alt="Logo" />
         </div>
 
-        {/* Hamburger Icon for Mobile */}
-        <div className="md:hidden flex items-center">
-          <button onClick={toggleMenu} className="">
-            <svg
-              className="w-8 h-8 text-gray-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-        </div>
-
-        {/* Nav Links */}
-        <div className={`md:flex items-center justify-around flex-1 ${isOpen ? 'block' : 'hidden'} md:block`}>
-          <ul className="flex flex-col md:flex-row gap-6 md:gap-10 text-white">
+        {/* Navigation Links */}
+        <div
+          className={`${
+            isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+          } md:translate-y-0 md:opacity-100 transform md:block w-full md:w-auto absolute md:relative top-16 left-0 md:top-0 md:left-auto bg-orange-500 md:bg-transparent transition-all duration-300 ease-in-out z-40`}
+        >
+          <ul className="flex flex-col md:flex-row gap-6 md:gap-10 text-white p-6 md:p-0">
             <li>
-              <a className="hover:bg-orange-500 p-3 rounded-md " href="/">
+              <a className="hover:bg-orange-600 p-3 rounded-md" href="/">
                 HOME
               </a>
             </li>
             <li>
-              <a className="hover:bg-orange-500 p-3 rounded-md " href="/about">
+              <a className="hover:bg-orange-600 p-3 rounded-md" href="/about">
                 ABOUT US
               </a>
             </li>
             <li>
-              <a className="hover:bg-orange-500 p-3 rounded-md " href="/admission">
+              <a className="hover:bg-orange-600 p-3 rounded-md" href="/admission">
                 ADMISSION
               </a>
             </li>
             <li>
-              <a className="hover:bg-orange-500 p-3 rounded-md " href="/">
+              <a className="hover:bg-orange-600 p-3 rounded-md" href="/">
                 ACADEMICS
               </a>
             </li>
             <li>
-              <a className="hover:bg-orange-500 p-3 rounded-md " href="/">
+              <a className="hover:bg-orange-600 p-3 rounded-md" href="/">
                 CONTACT
               </a>
             </li>
-          </ul>
-
-          <ul className="flex flex-col md:flex-row ml-0 md:ml-10 gap-6 md:gap-0 text-gray-400">
-          <li>
-              <a className="hover:bg-orange-500 p-3 rounded-md text-white " href="/register">
+            <li>
+              <a className="hover:bg-orange-600 p-3 rounded-md" href="/register">
                 REGISTER
               </a>
             </li>
             <li>
-              <a className="hover:bg-orange-500 p-3 rounded-md text-white " href="/login">
+              <a className="hover:bg-orange-600 p-3 rounded-md" href="/login">
                 LOGIN
               </a>
             </li>
-    
           </ul>
         </div>
+
+        {/* Hamburger Icon for Mobile */}
+        <button
+          className="md:hidden focus:outline-none z-50"
+          onClick={toggleMenu}
+          aria-expanded={isOpen ? 'true' : 'false'}
+        >
+          {isOpen ? (
+            <X className="w-6 h-6 text-white" />
+          ) : (
+            <Menu className="w-6 h-6 text-white" />
+          )}
+        </button>
       </div>
     </nav>
   );
