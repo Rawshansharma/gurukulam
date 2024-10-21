@@ -29,8 +29,8 @@ const Hero = () => {
             />
           </div>
           <div className='w-full lg:w-1/2'>
-            <q className='p-5 lg:ml-10 text-gray-500'>There is a learning behind every success.</q>
-            <p className='p-10 lg:ml-10 mt-10 text-sm mb-10 text-gray-500 lg:w-[80%]'>
+            <p className='p-4 lg:ml-10 text-gray-500 '>There is a learning behind every success.</p>
+            <p className='p-10 lg:ml-10 mt-5 text-sm mb-10 text-gray-500 lg:w-[80%]'>
               We respect the dignity and worth of all the children under our care. We believe that all children can be
               nurtured to achieve their full potential within a school environment that is both caring and challenging. We
               expect all children to be respectful and responsible and to rise to the challenges of life.
