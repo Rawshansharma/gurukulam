@@ -24,7 +24,7 @@ const Hero = () => {
           <div className='w-full lg:w-1/2'>
             <img
               className='p-5'
-              src='https://www.sidco.co.in/storage/image/business_photo/IMG1693892069_230279271.jpeg'
+              src='https://content.jdmagicbox.com/comp/vaishali/v9/9999p6225.6225.171230220021.b3v9/catalogue/gyan-jyoti-gurukulam-public-school-jandaha-vaishali-public-schools-bdqoteda9w.jpg'
               alt='hero-img'
             />
           </div>
