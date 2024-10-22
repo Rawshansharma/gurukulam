@@ -1,5 +1,5 @@
 import Aboutus from "./components/Aboutus"
-import AdmissionFrorm from "./components/AdmissionForm";
+import AdmissionForm from "./components/AdmissionForm";
 import Home from "./components/Home"
 import Navbar from "./components/Navbar"
 import {
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path : "/admission",
-    element:<AdmissionFrorm/>
+    element:<AdmissionForm/>
   },
   {
     path:'/register',
