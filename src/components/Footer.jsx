@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
       <p className='text-gray-400 p-4 text-sm mt-5'>
         Copyright © 2024 GYAN JYOTI GURUKULAM SCHOOL. All rights reserved. Designed by 
-        <a href="" className="text-rose-400"> Raushan Sharma</a>
+        <a href="https://www.linkedin.com/in/raushan-sharma74/" className="text-rose-400"> Raushan Sharma</a>
       </p>
    </div>
   )
